@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Car, Cars} from './car.model';
+import {Cars} from './car.model';
 import {Store} from '@ngrx/store';
 import {AppState} from './redux/app.state';
 import {Observable} from 'rxjs';
@@ -9,19 +9,12 @@ import {Observable} from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   public  carState: Observable<Cars>;
 
   constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
     this.carState = this.store.select('carPage');
-  }
-
-  onAdd(car: Car) {
-   // this.cars.push(car);
-  }
-  onDelete(car: Car) {
-   // this.cars = this.cars.filter(c => c.id !== car.id);
   }
 }
