@@ -19,7 +19,14 @@
       "name": "Daewoo",
       "date": "05.05.2009",
       "model": "Lanos",
-      "isSold": false
+      "isSold": true
+    },
+    {
+      "name": "222",
+      "date": "29.07.19",
+      "model": "222",
+      "isSold": false,
+      "id": 5
     }
   ]
 }
