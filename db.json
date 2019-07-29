@@ -22,11 +22,11 @@
       "isSold": true
     },
     {
-      "name": "222",
+      "name": "New Car",
       "date": "29.07.19",
-      "model": "222",
+      "model": "New car model",
       "isSold": false,
-      "id": 5
+      "id": 4
     }
   ]
 }
